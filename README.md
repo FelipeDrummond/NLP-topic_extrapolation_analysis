@@ -17,7 +17,13 @@ To evaluate the transferability of language models by:
 
 ## Datasets
 The project will utilize three different types of datasets:
-- **Sentiment Analysis**: Training models to classify text sentiment (positive, negative, neutral) using movie reviews or product reviews datasets from Kaggle
+- **Sentiment Analysis**: 
+  - Twitter Entity Sentiment Analysis: Pre-labeled tweets with sentiment classifications
+  - Financial Sentiment Analysis: Text data with sentiment labels from financial contexts
+  - Amazon Reviews: Product reviews with ratings (1-5 scale) that will be converted to ternary sentiment labels:
+    - Ratings 1-2: Negative
+    - Rating 3: Neutral
+    - Ratings 4-5: Positive
 - **Fake News Detection**: Developing models that can identify misleading or false news articles using labeled news datasets
 - **Spam Detection**: Building classifiers to distinguish between legitimate and spam messages/emails, testing transferability of learned features across different communication platforms
 
